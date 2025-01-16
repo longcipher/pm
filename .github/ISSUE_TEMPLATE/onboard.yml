@@ -1,0 +1,19 @@
+name: Onboard checklist
+description: Template for onboarding a new team member
+labels: ["onboard"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome to the team! This checklist will help you get started with your new role. Please check off each item as you complete it.
+  
+  - type: checkboxes
+    id: onboard-checklist
+    attributes:
+      label: Onboard checklist
+      options:
+        - label: Invite to Github
+        - label: Invite to Notion
+        - label: Invite to Weekly meeting calendar
+        - label: Invite to Telegram group
+        - label: Read onboard guide

@@ -1,0 +1,42 @@
+name: Weekly Meeting Agenda
+description: Template for creating a weekly meeting agenda.
+labels: ["weekly","meeting"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the following information to prepare for our weekly meeting.
+
+  - type: input
+    id: meeting-date
+    attributes:
+      label: Meeting Date
+      description: Please enter the date of the weekly meeting (e.g., YYYY-MM-DD).
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+
+  - type: textarea
+    id: agenda
+    attributes:
+      label: Meeting Agenda
+      description: Please list the topics to be discussed during the meeting.
+      placeholder: |
+        - Review project updates
+        - Discuss ongoing tasks
+        - Plan for next week
+        - Address any roadblocks
+    validations:
+      required: true
+  
+  - type: textarea
+    id: discussion
+    attributes:
+      label: Topics for Discussion
+      description: Please list specific topics or questions you want to discuss in detail.
+      placeholder: |
+        - Need more clarification on the API design
+        - Issues with integration X
+        - Proposal for feature Y
+    validations:
+      required: false
